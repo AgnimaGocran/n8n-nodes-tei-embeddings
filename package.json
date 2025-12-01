@@ -1,7 +1,7 @@
 {
-  "name": "n8n-nodes-tei-embedding",
+  "name": "n8n-nodes-tei-embeddings",
   "version": "1.0.2",
-  "description": "Tei embedding provider node for n8n AI integrations",
+  "description": "Tei embeddings provider node for n8n AI integrations",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
@@ -20,13 +20,13 @@
   ],
   "author": "24auru&AgnimaGocran",
   "license": "MIT",
-  "homepage": "https://github.com/AgnimaGocran/n8n-nodes-tei-embedding",
+  "homepage": "https://github.com/AgnimaGocran/n8n-nodes-tei-embeddings",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AgnimaGocran/n8n-nodes-tei-embedding.git"
+    "url": "git+https://github.com/AgnimaGocran/n8n-nodes-tei-embeddings.git"
   },
   "bugs": {
-    "url": "https://github.com/AgnimaGocran/n8n-nodes-tei-embedding/issues"
+    "url": "https://github.com/AgnimaGocran/n8n-nodes-tei-embeddings/issues"
   },
   "files": [
     "dist"

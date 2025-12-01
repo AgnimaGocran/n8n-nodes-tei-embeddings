@@ -41,7 +41,7 @@
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/AgnimaGocran/n8n-nodes-tei-embedding.git
+   git clone https://github.com/AgnimaGocran/n8n-nodes-tei-embeddings.git
    cd n8n-nodes-custom-embedding
    ```
 

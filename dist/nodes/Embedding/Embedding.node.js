@@ -98,7 +98,7 @@ class Embedding {
                 resources: {
                     primaryDocumentation: [
                         {
-                            url: 'https://github.com/AgnimaGocran/n8n-nodes-tei-embedding/blob/main/README.md',
+                            url: 'https://github.com/AgnimaGocran/n8n-nodes-tei-embeddings/blob/main/README.md',
                         },
                     ],
                 },
