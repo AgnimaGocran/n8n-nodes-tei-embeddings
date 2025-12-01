@@ -1,7 +1,7 @@
 # n8n Tei Embeddings Node
 
-[![Version](https://img.shields.io/npm/v/n8n-nodes-custom-embedding.svg)](https://www.npmjs.com/package/n8n-nodes-custom-embedding)
-[![Downloads](https://img.shields.io/npm/dm/n8n-nodes-custom-embedding.svg)](https://www.npmjs.com/package/n8n-nodes-custom-embedding)
+[![Version](https://img.shields.io/npm/v/n8n-nodes-tei-embeddings.svg)](https://www.npmjs.com/package/n8n-nodes-tei-embeddings)
+[![Downloads](https://img.shields.io/npm/dm/n8n-nodes-tei-embeddings.svg)](https://www.npmjs.com/package/n8n-nodes-tei-embeddings)
 
 **n8n Tei Embeddings Node** - embedding provider for n8n AI nodes that proxies requests to your Tei embeddings service.
 
@@ -30,7 +30,7 @@
 
 1. **Install the package:**
    ```bash
-   npm install n8n-nodes-custom-embedding
+   npm install n8n-nodes-tei-embeddings
    ```
 
 2. **Restart n8n**
@@ -42,7 +42,7 @@
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/AgnimaGocran/n8n-nodes-tei-embeddings.git
-   cd n8n-nodes-custom-embedding
+   cd n8n-nodes-tei-embeddings
    ```
 
 2. **Install dependencies:**
@@ -137,7 +137,7 @@ curl -X POST http://10.24.10.153:8081/embeddings \
 ## 🏗️ Project Structure
 
 ```
-n8n-nodes-custom-embedding/
+n8n-nodes-tei-embeddings/
 ├── nodes/
 │   └── Embedding/                    # Tei Embeddings sub-node
 │       ├── Embedding.node.ts         # Sub-node implementation
