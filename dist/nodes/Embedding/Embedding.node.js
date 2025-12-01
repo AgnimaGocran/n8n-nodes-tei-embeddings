@@ -85,7 +85,7 @@ class CustomEmbeddingsImplementation {
 class Embedding {
     constructor() {
         this.description = {
-            displayName: 'Tei Embedding Node',
+            displayName: 'Tei Embeddings Node',
             name: 'teiEmbedding',
             icon: 'file:embedding.svg',
             group: ['transform'],
@@ -105,7 +105,7 @@ class Embedding {
             },
             description: 'Generate text embeddings via Tei embeddings API (embedding sub-node)',
             defaults: {
-                name: 'Tei Embedding',
+                name: 'Tei Embeddings',
             },
             inputs: [],
             outputs: ["ai_embedding"],
@@ -131,7 +131,7 @@ class Embedding {
         return 'embedding';
     }
     async supplyData(itemIndex) {
-        this.logger.info('Supplying Tei Embedding implementation');
+        this.logger.info('Supplying Tei Embeddings implementation');
         const credentials = await this.getCredentials('embeddingApi');
         const host = credentials.host;
         const port = credentials.port;

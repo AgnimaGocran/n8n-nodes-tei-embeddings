@@ -1,13 +1,13 @@
-# n8n Tei Embedding Node
+# n8n Tei Embeddings Node
 
 [![Version](https://img.shields.io/npm/v/n8n-nodes-custom-embedding.svg)](https://www.npmjs.com/package/n8n-nodes-custom-embedding)
 [![Downloads](https://img.shields.io/npm/dm/n8n-nodes-custom-embedding.svg)](https://www.npmjs.com/package/n8n-nodes-custom-embedding)
 
-**n8n Tei Embedding Node** - embedding provider for n8n AI nodes that proxies requests to your Tei embeddings service.
+**n8n Tei Embeddings Node** - embedding provider for n8n AI nodes that proxies requests to your Tei embeddings service.
 
 ## ✨ Features
 
-- 💠 **Tei Embedding sub-node** - provides embeddings for AI models and Vector Store nodes
+- 💠 **Tei Embeddings sub-node** - provides embeddings for AI models and Vector Store nodes
 - 🔌 **Custom API Integration** - point the node to your Tei instance
 - 📡 **Single `/embeddings` POST endpoint** - send one string or an array of strings via the `input` field
 - 📊 **Streaming-friendly output parsing** - handles Tei list responses automatically
@@ -17,7 +17,7 @@
 
 ## 🎯 Node Type
 
-### Tei Embedding Node (Sub-node)
+### Tei Embeddings Node (Sub-node)
 - **Purpose**: Embedding provider for AI models and Vector Store nodes
 - **Type**: `embedding` (special type for n8n AI integration)
 - **Inputs**: None (sub-node)
@@ -67,18 +67,18 @@ Configure connection to your API service:
 
 ## 📋 Node Parameters
 
-### Tei Embedding Node
+### Tei Embeddings Node
 This node has no configurable parameters as it's designed to work as an embedding provider for other nodes.
 
 ## 💡 Usage Examples
 
-### Example 1: Using the Tei Embedding Node with a Vector Store
+### Example 1: Using the Tei Embeddings Node with a Vector Store
 
 1. Add a **Vector Store** node (e.g., Supabase Vector Store).
 2. In the Vector Store node, look for the **Embedding** connection.
-3. Select **Tei Embedding Node** from the dropdown.
+3. Select **Tei Embeddings Node** from the dropdown.
 4. Configure your credentials.
-5. The Vector Store will automatically use your Tei embedding service.
+5. The Vector Store will automatically use your Tei Embeddings service.
 
 ### Example 2: Single Text Request to `/embeddings`
 
@@ -139,7 +139,7 @@ curl -X POST http://10.24.10.153:8081/embeddings \
 ```
 n8n-nodes-custom-embedding/
 ├── nodes/
-│   └── Embedding/                    # Tei embedding sub-node
+│   └── Embedding/                    # Tei Embeddings sub-node
 │       ├── Embedding.node.ts         # Sub-node implementation
 │       └── embedding.svg             # Node icon
 ├── credentials/
@@ -168,7 +168,7 @@ npm run build
 
 ### Project Architecture
 
-The project centers around a single Tei embedding node that implements the `INodeType` interface with `type: 'embedding'`. The node provides its embedding implementation through `supplyData()` so it can be reused by AI and Vector Store nodes without additional configuration.
+The project centers around a single Tei Embeddings node that implements the `INodeType` interface with `type: 'embedding'`. The node provides its embedding implementation through `supplyData()` so it can be reused by AI and Vector Store nodes without additional configuration.
 
 ##  API Endpoint
 
@@ -224,7 +224,7 @@ Generates embeddings for one or more texts via the Tei service.
 ### Testing in n8n
 
 1. Create a new workflow
-2. Add "Tei Embedding Node"
+2. Add "Tei Embeddings Node"
 3. Configure Credentials
 4. Test with simple text
 
