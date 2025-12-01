@@ -4,10 +4,6 @@
   "description": "Tei embeddings provider node for n8n AI integrations",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
-    "dev": "tsc --watch",
-    "prepare": "npm run build",
-    "postbuild": "copy-icon.bat"
   },
   "keywords": [
     "n8n-community-node-package",
